@@ -8,5 +8,5 @@ jobs:
     steps:
       - run: echo "The amazing job has started"
       - run: echo "this was triggered by a ${{ github.event_name }} event."
-      - run: $printenv OS
+      - run: echo "this was run on ${{runner.os}}"
       - run: echo "the amazing job is complete"
