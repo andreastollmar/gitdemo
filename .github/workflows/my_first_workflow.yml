@@ -9,5 +9,5 @@ jobs:
       - run: echo "The amazing job has started"
       - run: echo "this was triggered by a ${{ github.event_name }} event."
       - run: echo "this was run on ${{runner.os}}"
-      - run: echo "started in ${{github.repository}} on ${{github.ref#refs/heads/}} branch"
+      - run: echo "started in ${{github.repository}} on ${{github.ref_name}} branch"
       - run: echo "the amazing job is complete"
